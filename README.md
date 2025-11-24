@@ -6,7 +6,7 @@ A complete lab environment for testing and demonstrating AutoOps agent capabilit
 
 This lab environment consists of:
 - A Multipass VM running Docker
-- Elasticsearch 9.1.3 cluster
+- Elasticsearch
 - Scripts to introduce various cluster health issues
 - AutoOps agent installation and configuration tools
 
@@ -28,7 +28,7 @@ This lab environment consists of:
 This script will:
 - Clean up any existing AutoOps VM instances
 - Launch a new Multipass VM with Docker
-- Start Elasticsearch 9.1.3
+- Start Elasticsearch
 - Introduce various cluster issues
 - Display your Elasticsearch credentials
 
