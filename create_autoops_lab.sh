@@ -23,8 +23,8 @@ multipass transfer introduce_issues.sh autoops:/home/ubuntu/
 multipass exec autoops -- bash -c 'chmod +x /home/ubuntu/*.sh'
 
 # Start Elasticsearch and capture output
-echo "Starting Elasticsearch 9.1.3..."
-multipass exec autoops -- bash -c "curl -fsSL https://elastic.co/start-local | sh -s -- -v 9.1.3 --esonly" 2>&1 | tee es_startup.log
+echo "Starting Elasticsearch..."
+multipass exec autoops -- bash -c "curl -fsSL https://elastic.co/start-local | sh -s -- --esonly" 2>&1 | tee es_startup.log
 
 echo "Waiting for Elasticsearch to fully start..."
 sleep 15
